@@ -3,6 +3,6 @@ using namespace std;
 
 int main() {
 	setlocale(LC_ALL, "Rus");
-	cout << "init" << endl;
+	cout << "2 коммит" << endl;
 	return 0;
 }
