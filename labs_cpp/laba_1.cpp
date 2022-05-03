@@ -10,6 +10,7 @@ int factorial(int n) {
 
 int laba_1() {
 
+	setlocale(0, "");
 	float N = 6, a, b, c, d, x, R, r, tmp;
 
 	cout << "1)\nГанжа Ярослав Игоревич, 05.12.03" << endl;
