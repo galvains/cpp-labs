@@ -1,8 +1,5 @@
-#include<iostream>
-using namespace std;
+#include "laba_1.h"
 
-int main() {
-	setlocale(LC_ALL, "Rus");
-	cout << "2 коммит" << endl;
-	return 0;
+int laba_1(int a, int b) {
+	return a + b;
 }
