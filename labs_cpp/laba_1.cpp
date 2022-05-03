@@ -1,4 +1,4 @@
-#include "laba_1.h"
+ï»¿#include "laba_1.h"
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -13,10 +13,10 @@ int laba_1() {
 	setlocale(0, "");
 	float N = 6, a, b, c, d, x, R, r, tmp;
 
-	cout << "1)\nÃàíæà ßðîñëàâ Èãîðåâè÷, 05.12.03" << endl;
-	cout << "Ãàíæà\nßðîñëàâ\nÈãîðåâè÷\n05.12.03" << endl;
+	cout << "1)\nÐ“Ð°Ð½Ð¶Ð° Ð¯Ñ€Ð¾ÑÐ»Ð°Ð² Ð˜Ð³Ð¾Ñ€ÐµÐ²Ð¸Ñ‡, 05.12.03" << endl;
+	cout << "Ð“Ð°Ð½Ð¶Ð°\nÐ¯Ñ€Ð¾ÑÐ»Ð°Ð²\nÐ˜Ð³Ð¾Ñ€ÐµÐ²Ð¸Ñ‡\n05.12.03" << endl;
 
-	cout << "\n2) Ââåäèòå X: ";
+	cout << "\n2) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ X: ";
 	cin >> x;
 	a = x + N;
 	b = x - N;
@@ -25,52 +25,52 @@ int laba_1() {
 	cout << "a = " << a << ", b = " << b << ", c = " << c << ", d = " << d << endl;
 
 	int sredn = (a + b + c) / 3;
-	cout << "\n3) Ñðåäíåå àðèôìåòè÷åñêîå a,b,c = " << sredn << endl;
+	cout << "\n3) Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ a,b,c = " << sredn << endl;
 
 
-	cout << "\n4) Ââåäèòå R è r (R > r): ";
+	cout << "\n4) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ R Ð¸ r (R > r): ";
 	cin >> R >> r;
 	double P = 3.14159265, S;
 	S = P * (pow(R, 2) - pow(r, 2));
-	cout << "Ïëîùàäü êîëüöà = " << S << endl;
+	cout << "ÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ ÐºÐ¾Ð»ÑŒÑ†Ð° = " << S << endl;
 
 	int sec, h = 10, m = 15, s = 33;
-	cout << "\n5) Âðåìÿ: " << h << "." << m << "." << s << endl;
+	cout << "\n5) Ð’Ñ€ÐµÐ¼Ñ: " << h << "." << m << "." << s << endl;
 	sec = s + m * 60 + h * 60 * 60;
-	cout << "Â ñåêóíäàõ: " << sec << endl;
+	cout << "Ð’ ÑÐµÐºÑƒÐ½Ð´Ð°Ñ…: " << sec << endl;
 
 
-	cout << "\n6) a çàòåì b: " << a << "," << b << endl;
+	cout << "\n6) a Ð·Ð°Ñ‚ÐµÐ¼ b: " << a << "," << b << endl;
 	tmp = a;
 	a = b;
 	b = tmp;
-	cout << "   a çàòåì b: " << a << "," << b << endl;
+	cout << "   a Ð·Ð°Ñ‚ÐµÐ¼ b: " << a << "," << b << endl;
 
-	cout << "\n7) Ââåäèòå ìèíóòû: ";
+	cout << "\n7) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð¸Ð½ÑƒÑ‚Ñ‹: ";
 	cin >> m;
 	h = m / 60;
 	int min = (m - h * 60);
-	cout << h << " ÷àñîâ " << min << " ìèíóò" << endl;
+	cout << h << " Ñ‡Ð°ÑÐ¾Ð² " << min << " Ð¼Ð¸Ð½ÑƒÑ‚" << endl;
 
 	int k, n, y;
 
-	cout << "\n8) Ââåäèòå k, m, n, x: ";
+	cout << "\n8) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ k, m, n, x: ";
 	cin >> k >> m >> n >> x;
 	y = 2 * (pow(k, 2) / 2) + (x / 3) + (m % n);
 	cout << "y = " << y << endl;
 
 
-	cout << "\n9) Ââåäèòå X: ";
+	cout << "\n9) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ X: ";
 	cin >> x;
 	float res_9 = 1 - 2 * x + 3 * (x * x) - 4 * (x * x * x);
-	cout << "Îòâåò: " << res_9 << endl;
+	cout << "ÐžÑ‚Ð²ÐµÑ‚: " << res_9 << endl;
 
-	cout << "\n10) Ââåäèòå X: ";
+	cout << "\n10) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ X: ";
 	cin >> x;
 	float res_10 = x / (1 + (pow(x, 2) / 2 + (pow(x, 3) / 3 + (pow(x, 4) / 4))));
-	cout << "Îòâåò: " << res_10 << endl;
+	cout << "ÐžÑ‚Ð²ÐµÑ‚: " << res_10 << endl;
 
-	cout << "\n11) Ââåäèòå X: ";
+	cout << "\n11) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ X: ";
 	cin >> x;
 
 	int(*fact)(int n);
@@ -78,12 +78,12 @@ int laba_1() {
 
 	float res_11a = 1 - x + (pow(x, 2) / fact(2)) - (pow(x, 3) / fact(3)) + (pow(x, 4) / fact(4)) - (pow(x, 5) / fact(5));
 	float res_11b = x - (pow(x, 3) / fact(3)) + (pow(x, 5) / fact(5)) - (pow(x, 7) / fact(7)) + (pow(x, 9) / fact(9));
-	cout << "Îòâåò A: " << res_11a << "\nÎòâåò B: " << res_11b << endl;
+	cout << "ÐžÑ‚Ð²ÐµÑ‚ A: " << res_11a << "\nÐžÑ‚Ð²ÐµÑ‚ B: " << res_11b << endl;
 
 	//------------------------------------------------------------------------
 
 	int a1, a2, b1, b2, c1, c2, D, Dx, Dy;
-	cout << "\n12) Ââåäèòå a1, a2, b1, b2, c1, c2: ";
+	cout << "\n12) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ a1, a2, b1, b2, c1, c2: ";
 	cin >> a1 >> a2 >> b1 >> b2 >> c1 >> c2;
 	D = a1 * b2 - a2 * b1;
 	Dx = c1 * b2 - c2 * b1;
@@ -94,7 +94,7 @@ int laba_1() {
 
 	//------------------------------------------------------------------------
 
-	cout << "\nèíäèâèäóàëüíîå) Ââåäèòå a, x, y: ";
+	cout << "\nÐ¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑƒÐ°Ð»ÑŒÐ½Ð¾Ðµ) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ a, x, y: ";
 	cin >> a >> x >> y;
 	double e = 2.71, z1, z2, F;
 	z1 = cos(a) + cos(2 * a) + cos(6 * a) + cos(7 * a);
