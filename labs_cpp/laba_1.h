@@ -1,2 +1,2 @@
 #pragma once
-int laba_1(int a, int b);
+int laba_1();

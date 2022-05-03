@@ -6,8 +6,9 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Rus");
 
-	//int res1 = laba_1(4, 6);
-	//int res2 = laba_2(10, 4);
-	//cout << res2 << endl;
+	int res = laba_1();
+	cout << res << endl;
+
+	system("pause");
 	return 0;
 }
