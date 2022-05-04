@@ -1,4 +1,4 @@
-#include"laba_2.h"
+ï»¿#include"laba_2.h"
 #include<iostream>
 #include <cmath>
 using namespace std;
@@ -8,9 +8,9 @@ int laba_2() {
 
 	int a = 1, b = 0, c = 0;
 
-	cout << "3) " << "a)" << !(a && b) << " á)" << (a || !b) << " â)" << ((a && b) || c) 
-		 << "\n   ã)" << ((a && b) || !c) << " ä)" << (!a && !b) << " å)" << (!(a && c) || b) 
-		 << "\n   æ)" << ((a && !b) || c) << " ç)" << (a && (!b || c)) << " è)" << (a || (!(b & c))) << endl;
+	cout << "3) " << "a)" << !(a && b) << " Ð±)" << (a || !b) << " Ð²)" << ((a && b) || c) 
+		 << "\n   Ð³)" << ((a && b) || !c) << " Ð´)" << (!a && !b) << " Ðµ)" << (!(a && c) || b) 
+		 << "\n   Ð¶)" << ((a && !b) || c) << " Ð·)" << (a && (!b || c)) << " Ð¸)" << (a || (!(b & c))) << endl;
 
 	int y1, y2, y3, y4, y5, y6, k = 2, r = 3, E = 4, y = 3, x = 1;
 	y1 = pow(a, k) + 1 > pow(2 + c, r);
@@ -22,15 +22,15 @@ int laba_2() {
 	cout << "\n4) " << y1 << ", " << y2 << ", " << y3 
 		 << ", " << y4 << ", " << y5 << ", " << y6 << endl;
 
-	cout << "\n5) Ââåäèòå Õ: ";
+	cout << "\n5) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¥: ";
 	cin >> x;
 	int res_5a, res_5b, res_5v;
-	(x > 0) ? (res_5a = x) : (res_5a = ~(x - 1)); //à
-	(a > b) ? (res_5b = a) & (res_5v = 1) : (res_5b = b) & (res_5v = 1);//á è â
-	(x < y) ? (x = 0) : (y = 0);//ã
-	cout << "a)y = " << res_5a << " á)áîëüøåå " << res_5b << " â) " << res_5v << " ã)x = " << x << " y = " << y << endl;
+	(x > 0) ? (res_5a = x) : (res_5a = ~(x - 1)); //Ð°
+	(a > b) ? (res_5b = a) & (res_5v = 1) : (res_5b = b) & (res_5v = 1);//Ð± Ð¸ Ð²
+	(x < y) ? (x = 0) : (y = 0);//Ð³
+	cout << "a)y = " << res_5a << " Ð±)Ð±Ð¾Ð»ÑŒÑˆÐµÐµ " << res_5b << " Ð²) " << res_5v << " Ð³)x = " << x << " y = " << y << endl;
 
-	cout << "\n7) Ââåäèòå a, x, y: ";
+	cout << "\n7) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ a, x, y: ";
 	cin >> a >> x >> y;
 	int z1, z2, z3, z4, z5, z6, z7, z8, z9, z10;
 	float e = 2.71;
@@ -45,7 +45,7 @@ int laba_2() {
 	cout << "y1 = " << y1 << " | y2= " << y2 << " | y3 = " << y3 << " | y4 = " << y4 << "\nz1 = " << z1 << " | z2= " << z2 << " | z3 = " << z3 << " | z4 = " << z4 << endl;
 
 	
-	cout << "\n8) Ââåäèòå x, y, r, R, a: ";
+	cout << "\n8) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ x, y, r, R, a: ";
 	int R;
 	cin >> x >> y >> r >> R >> a;
 	((abs(x) < r) && (abs(y) < r)) ? (z1 = 1) : (z1 = 0);
@@ -74,15 +74,15 @@ int laba_2() {
 	*/
 
 	int A, B, C, res;
-	cout << "\nèíä) Ââåäèòå A, B, C: ";
+	cout << "\nÐ¸Ð½Ð´) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ A, B, C: ";
 	cin >> A >> B >> C;
 	(A < B < C) ? (res = 1) : (res = 0);
-	cout << "à) " << res << endl;
+	cout << "Ð°) " << res << endl;
 
-	cout << "\nÂâåäèòå x, y: ";
+	cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ x, y: ";
 	cin >> x >> y;
 	((x < 0) && (y > 0)) ? (res = 1) : (res = 0);
-	cout << "á) " << res << endl;
+	cout << "Ð±) " << res << endl;
 
 
 	system("pause");
