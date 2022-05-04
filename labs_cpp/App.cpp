@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Rus");
 
-	int res = laba_1();
+	int res = laba_2();
 	cout << res << endl;
 
 	system("pause");
