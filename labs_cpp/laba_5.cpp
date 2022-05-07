@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include"laba_5.h"
 #include"cmath"
 using namespace std;
@@ -8,46 +8,46 @@ int laba_5() {
 
 	double x, a, b, m;
 	int N;
-	cout << "1) Ââåäèòå N: ";
+	cout << "1) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ N: ";
 	cin >> N;
 	for (int i = 2; i <= (sqrt(abs(N))); i++) {
 		if (N % i == 0) {
-			cout << "íå ïðîñòîå" << endl;
+			cout << "Ð½Ðµ Ð¿Ñ€Ð¾ÑÑ‚Ð¾Ðµ" << endl;
 			break;
 		}
 		else {
-			cout << "ïðîñòîå" << endl;
+			cout << "Ð¿Ñ€Ð¾ÑÑ‚Ð¾Ðµ" << endl;
 			break;
 		}
 	}
 
-	cout << "\n2) Ââåäèòå N: ";
+	cout << "\n2) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ N: ";
 	cin >> N;
 	double res = 1;
 	for (int i = 1 ; i <= N; i++) {
 		res *= i;
 	}
-	cout << "ôàêòîðèàë = " << res << endl;
+	cout << "Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» = " << res << endl;
 
-	cout << "\n3) Ââåäèòå N, x: ";
+	cout << "\n3) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ N, x: ";
 	cin >> N >> x;
 	a = sin(x);
 	res = a;
 	for (int i = 1; i <= N; i++) {
 		res = res + i * sin(x);
 	}
-	cout << "îòâåò = " << res << endl;
+	cout << "Ð¾Ñ‚Ð²ÐµÑ‚ = " << res << endl;
 
-	cout << "\n4) Ââåäèòå x (!=0): ";
+	cout << "\n4) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ x (!=0): ";
 	cin >> x;
 	res = 1;
 	for (int i = 7; i > 0; i--) {
 		res = (x * x + pow(2, i) / (x * x)) / res;
 	}
 	res = x / res;
-	cout << "îòâåò = " << res << endl;
+	cout << "Ð¾Ñ‚Ð²ÐµÑ‚ = " << res << endl;
 
-	cout << "\n5) Ââåäèòå x (!=0), N: ";
+	cout << "\n5) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ x (!=0), N: ";
 	cin >> x >> N;
 	res = 0;
 	int fact = 1, D;
@@ -59,9 +59,9 @@ int laba_5() {
 		fact *= i;
 		res += (pow(x,i)/fact)*(i + pow(D,2));
 	}
-	cout << "îòâåò = " << res << endl;
+	cout << "Ð¾Ñ‚Ð²ÐµÑ‚ = " << res << endl;
 
-	cout << "\nèíä 1) Ââåäèòå X: ";
+	cout << "\nÐ¸Ð½Ð´ 1) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ X: ";
 	cin >> x;
 	float pi = 3.1415, h, y;
 	a = pi/4;
@@ -75,13 +75,13 @@ int laba_5() {
 	}
 
 	float A;
-	cout << "\nèíä 2) Ââåäèòå A, N (>0): ";
+	cout << "\nÐ¸Ð½Ð´ 2) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ A, N (>0): ";
 	cin >> A >> N;
 	res = 1;
 	for (int i = 0; i < N; i++) {
 		res *= A;
 	}
-	cout << "îòâåò = " << res << endl;
+	cout << "Ð¾Ñ‚Ð²ÐµÑ‚ = " << res << endl;
 
 
 	system("pause");
