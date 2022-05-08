@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include"laba_6.h"
 #include"cmath"
 
@@ -8,7 +8,7 @@ int laba_6() {
 	setlocale(0, "");
 
 	float n, b, count = 0, sum = 0;
-	cout << "1) Ââåäèòå n: ";
+	cout << "1) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ n: ";
 	cin >> n;
 	b = n * 2;
 	for (int i = n; i <= b; i++) {
@@ -19,9 +19,9 @@ int laba_6() {
 			}
 		}
 	}
-	cout << "ñóììà = " << sum << " | êîë-âî: " << count << endl;
+	cout << "ÑÑƒÐ¼Ð¼Ð° = " << sum << " | ÐºÐ¾Ð»-Ð²Ð¾: " << count << endl;
 	
-	cout << "\n2) Ââåäèòå n: ";
+	cout << "\n2) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ n: ";
 	cin >> n;
 	int a = ceil(n) + 5;
 	count = 0;
@@ -35,9 +35,9 @@ int laba_6() {
 			}
 		}
 	}
-	cout << "êîë - âî: " << count << endl;
+	cout << "ÐºÐ¾Ð» - Ð²Ð¾: " << count << endl;
 
-	cout << "\n3) Ââåäèòå n: ";
+	cout << "\n3) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ n: ";
 	cin >> n;
 	count = 0;
 	for (int i = 1; i * i <= n; i++) {
@@ -54,7 +54,7 @@ int laba_6() {
 
 	float S, F, x, y, e, m, h;
 	int a = 0, b = 2, fact = 1;
-	cout << "\nèíä) Ââåäèòå x: ";
+	cout << "\nÐ¸Ð½Ð´) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ x: ";
 	cin >> x >> m;
 	e = 2.71;
 	S = 0;
@@ -67,7 +67,7 @@ int laba_6() {
 		}
 		y = pow(e, x);
 	}
-	cout << "îòâåò = " << S << endl;
+	cout << "Ð¾Ñ‚Ð²ÐµÑ‚ = " << S << endl;
 
 	system("pause");
 	return 0;
