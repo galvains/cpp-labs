@@ -52,22 +52,44 @@ int laba_6() {
 		cout << "false" << endl;
 	}
 
-	float S, F, x, y, e, m, h;
-	int a = 0, b = 2, fact = 1;
-	cout << "\nинд) Введите x: ";
-	cin >> x >> m;
-	e = 2.71;
-	S = 0;
+	double x, y, eps, m, h, S, res = 0, fact = 1, e = 2.71;
+	a = 0; b = 2;
+	cout << "\n Введите eps, m: "; cin >> eps >> m;
 	h = (b - a) / m;
-	for (int i = 0; i < m; i++) {
+	for (int i = a; i <= b; i++) {
 		x = a + i * h;
-		fact *= i;
-		for (int j = 0; j < m; j++) {
-			S += (pow(x, i) / fact);
+		y = pow(e, x);		
+		for (int j = 0; j <= m; j++) {		
+			fact *= j;
+			S = pow(x, j) / fact;
+			if (S > eps && S > y) {
+				res += S;
+			}	
 		}
-		y = pow(e, x);
+		cout << "x = " << x << " | S = " << res << " | y = " << y << endl;
 	}
-	cout << "ответ = " << S << endl;
+
+	a = 0; b = 3.14;
+	cout << "\n Введите eps, m: "; cin >> eps >> m;
+	h = (b - a) / m;
+	for (int i = a; i <= b; i++) {
+		x = a + i * h;
+		y = cos(x);
+
+		for (int j = 0; j <= m; j++) {
+
+			fact *= j*2;
+			S = pow(-1, j) * (pow(x, 2 * n)/2);
+			if (S > eps && S > y) {
+				res += S;
+			}
+
+		}
+		cout << "x = " << x << " | S = " << res << " | y = " << y << endl;
+	}
+
+
+
 
 	system("pause");
 	return 0;
