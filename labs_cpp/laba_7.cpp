@@ -54,24 +54,50 @@ int laba_7() {
 		}
 		cout << arr3[i] << " ";
 	}
-	cout << "count = " << count << endl;
+	cout << "\ncount = " << count << endl;
 
-	int arr4[6]{ 23,3,8,0,12,7 };
-	int ind1 = 0, ind2 = 0;
+	const int n = 12;
+	int ind1 = 0, ind2 = 0, min_abs = 10, A[n];
 	cout << "\n4) ";
-	for (int i = 0; i < 6 - 1; i++) {
-		for (int j = i + 1; j < 6; j++) {
-			if (abs(arr4[i] - arr4[j]) == 2) {
+	for (int i = 0; i < n; i++)
+	{
+		A[i] = rand() % 20 - 10;
+		cout << A[i] << " ";
+	}
+
+	for (int i = 0; i < n - 1; i++) {
+		for (int j = i + 1; j < n; j++) {
+			if (abs(A[i] - A[j]) <= min_abs) {
+				min_abs = abs(A[i] - A[j]);
 				ind1 = i;
 				ind2 = j;
-				
-				if (j < 6) {
-					break;
-				}
+		
 			}
 		}	
 	}
-	cout << "ind1 = " << ind1 << " | ind2 = " << ind2 << endl;
+	cout << "\nind1 = " << ind1 << " | ind2 = " << ind2 << endl;
+
+	int arr5[6]{ 55,13,8,0,-1,5 };
+	int count_min = 0;
+	count = 0;
+	min = arr5[0];
+	cout << "\nинд) ";
+	for (int i = 0; i < 6; i++) {
+		if (arr5[i] != 0) {			
+			count++;
+		}
+		if (arr5[i] < min) {
+			min = arr5[i];
+		}
+
+		cout << arr5[i] << " ";
+	}
+	for (int i = 0; i < 6; i++) {
+		if (arr5[i] != min) {
+			count_min++;
+		}
+	}
+	cout << "\ncount = " << count << "\nне совпадающие с min = " << count_min << endl;
 
 
 	system("pause");
