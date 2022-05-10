@@ -6,12 +6,13 @@
 #include"laba_5.h"
 #include"laba_6.h"
 #include"laba_7.h"
+#include"laba_8.h"
 using namespace std;
 
 int main() {
 	setlocale(LC_ALL, "Rus");
 
-	int res = laba_7();
+	int res = laba_8();
 	cout << res << endl;
 
 	system("pause");
