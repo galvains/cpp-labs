@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include"laba_9.h"
 #include<cmath>
 
@@ -119,7 +119,7 @@ int laba_9() {
 
 	int c, s, t;
 	double res;
-	cout << "1) Ââåäèòå c, s, t: "; cin >> c >> s >> t;
+	cout << "1) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ c, s, t: "; cin >> c >> s >> t;
 	res = f1(1.2, c) + f1(t, s) - f1(2 * s - 1, s * t);
 	cout << res << endl;
 
@@ -135,37 +135,37 @@ int laba_9() {
 	cout <<"\nsr_arifm = " << f2(sum, count) << endl;
 
 	double x, a, eps;
-	cout << "\n3) Ââåäèòå x, a, eps: "; cin >> x >> a >> eps;
+	cout << "\n3) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ x, a, eps: "; cin >> x >> a >> eps;
 	if (x == 0){
 		x = 1;
-		cout << "Îòâåò = " << x << endl;
+		cout << "ÐžÑ‚Ð²ÐµÑ‚ = " << x << endl;
 	}
 	else if (abs(x) < 1){
 		for (int i = 0; i < 6; i++){
 			if (eps > 0 && a > 0){
-				cout << "Îòâåò " << i+1 <<") " << Power1(x, a, eps) << endl;
+				cout << "ÐžÑ‚Ð²ÐµÑ‚ " << i+1 <<") " << Power1(x, a, eps) << endl;
 			}
 			else {
-				cout << "eps è a äîëæíû áûòü áîëüøå 0!" << endl;
+				cout << "eps Ð¸ a Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð±Ñ‹Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ 0!" << endl;
 			}
 		}
 	}
 	else{
-		cout << "Ìîäóëü x äîëæåí áûòü < 1" << endl;
+		cout << "ÐœÐ¾Ð´ÑƒÐ»ÑŒ x Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ < 1" << endl;
 	}
 
 	int y, n;
 	res = 0;
-	cout << "\n4) Ââåäèòå x, y, n: "; cin >> x >> y >> n;
+	cout << "\n4) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ x, y, n: "; cin >> x >> y >> n;
 	res = (1.7 * f4(0.25, n) + 2 * f4(1 + y, n)) / (6 - f4(pow(y, 2) - 1, n));
 	cout << "\nsum = " << res << endl;
 
 	int A, B, Op;
-	cout << "\nèíä) Ââåäèòå A, B, Op(1-âû÷, 2-óìí, 3-äåë, îñò.-ñëîæ): " << endl;
+	cout << "\nÐ¸Ð½Ð´) Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ A, B, Op(1-Ð²Ñ‹Ñ‡, 2-ÑƒÐ¼Ð½, 3-Ð´ÐµÐ», Ð¾ÑÑ‚.-ÑÐ»Ð¾Ð¶): " << endl;
 	cin >> A >> B >> Op;
-	cout << "\nÎòâåò: " << Calc(A, B, Op) << endl;
+	cout << "\nÐžÑ‚Ð²ÐµÑ‚: " << Calc(A, B, Op) << endl;
 
-	cout << "\nèíä 2)" << endl;
+	cout << "\nÐ¸Ð½Ð´ 2)" << endl;
 	int x1 = 0, x2 = 0, x3 = 0;
 	for (int i = 0; i < 8; i++) {
 		switch (i){
